@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LueurTech | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55ea4909ec.js" crossorigin="anonymous"></script>
+    <script  defer src="script.js"></script>
+</head>
+<body>
+    
+    <div class="container hidden">
+        <div class="first">
+            <div class="top topSignUpText">
+                <h2 class="topTitle">LueurTech Software Solutions</h2>
+                <p class="topText">Hey!!! What are you still thinking? Just go ahead and sign in to enter our world...</p>
+            </div>
+
+            <div class="bottom bottomSignUpImage">
+                <img src="images/rocket.svg" alt="">
+            </div>
+
+
+            
+        </div>
+
+        <div class="second">
+            <div class="signInSection">
+                <h1 class="title">Sign In</h1>
+                <p class="errorMessage hidden" id="errorMessage">Something is missing.</p>
+
+                <form class="signInForm" onsubmit="return validate()" action="success.html">
+                    <div class="inputSection">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="User Name" class="inputFeild" id="emailAddress">
+                    </div>
+                    <div class="inputSection">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="password" class="inputFeild" id="password">
+                    </div>
+                    <!-- <button class="btn loginButton">Login</button> -->
+                    <input type="submit" class="btn loginButton" value="Submit">
+                </form>
+                <p class="socialText">Or Sign In with social platforms.</p>
+                <div class="socialIcons">
+                    <button class="icon facebookSignin" title="Disabled"><i class="fab fa-facebook-f"></i></button>
+                    <button class="icon googleSignin" title="Disabled"><i class="fab fa-google"></i></i></button>
+                    <button class="icon twitterSignin" title="Disabled"><i class="fab fa-twitter"></i></button>
+                    <button class="icon githubSignin" title="Disabled"><i class="fab fa-github"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
